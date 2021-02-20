@@ -1,8 +1,8 @@
 ### GET
-GET http://localhost:3001/api/blogs
+GET http://localhost:3003/api/blogs
 
 ### POST
-POST http://localhost:3001/api/blogs/ HTTP/1.1
+POST http://localhost:3003/api/blogs/ HTTP/1.1
 content-type: application/json
 
 {
@@ -12,8 +12,28 @@ content-type: application/json
     "likes": 100
 }
 
+###
+POST http://localhost:3003/api/users/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "hellas",
+    "name": "Arto Hellas",
+    "password": "1234"
+}
+
+###
+POST http://localhost:3003/api/users/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "mluukai",
+    "name": "Matti Luukkainen",
+    "password": "12"
+}
+
 ### PUT
-PUT http://localhost:3001/api/blogs/5a422aa71b54a676234d17f8 HTTP/1.1
+PUT http://localhost:3003/api/blogs/5a422aa71b54a676234d17f8 HTTP/1.1
 content-type: application/json
 
 {
@@ -22,3 +42,7 @@ content-type: application/json
     "url": "www.my-personal-blog.de",
     "likes": 1234
 }
+
+###
+DELETE http://localhost:3003/api/blogs/60310f2e5adf5a0a6c4da198
+
