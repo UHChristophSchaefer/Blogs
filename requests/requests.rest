@@ -1,8 +1,8 @@
 ### GET
-GET http://localhost:3003/api/blogs
+GET http://localhost:3001/api/blogs
 
 ### POST
-POST http://localhost:3003/api/blogs/ HTTP/1.1
+POST http://localhost:3001/api/blogs/ HTTP/1.1
 content-type: application/json
 
 {
@@ -10,4 +10,15 @@ content-type: application/json
     "author": "Christoph Schaefer",
     "url": "www.my-personal-blog.de",
     "likes": 100
+}
+
+### PUT
+PUT http://localhost:3001/api/blogs/5a422aa71b54a676234d17f8 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "My Blog",
+    "author": "Christoph Schaefer",
+    "url": "www.my-personal-blog.de",
+    "likes": 1234
 }
